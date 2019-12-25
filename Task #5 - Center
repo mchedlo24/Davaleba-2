@@ -22,21 +22,21 @@ function num1() {
 }
 
 function num2() {
-   while (leftIsClear()){
-	num1();
+   while (leftIsClear()) {
+   num1();
 	}
 }
 
-function num3 (){
+function num3 () {
    turnAround();
-   while (frontIsClear()){
+   while (frontIsClear()) {
       move();
    }
 }
 
-function num4 (){
+function num4 () {
    turnAround();
-   while (noBeepersPresent()){
+   while (noBeepersPresent()) {
    move();
    turnRight();
    move();
@@ -44,14 +44,14 @@ function num4 (){
    }
    putBeeper();
 }
-function num5 (){
+function num5 () {
    turnRight();
    while (frontIsClear()) {
    move();
    }
 }
 
-function num6 (){
+function num6 () {
    pickBeeper();
    move();
    turnLeft();
@@ -59,7 +59,7 @@ function num6 (){
    turnRight();
 }
 
-function num7(){
+function num7() {
    while (leftIsClear()) {
    pickBeeper();
    turnLeft();
