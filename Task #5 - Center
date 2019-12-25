@@ -1,0 +1,73 @@
+function main(){
+   num1();
+   num2 ();
+   putBeeper();
+   num3();
+   num4();
+   num5();
+   num5();
+   turnAround();
+   num6();
+   num7();
+      
+   }
+
+
+function num1 (){
+   putBeeper();
+   turnLeft();
+   move();
+   turnRight();
+   move();
+   
+}
+
+function num2 (){
+   while (leftIsClear()){
+      num1();
+      }
+}
+
+function num3 (){
+   turnAround();
+   while (frontIsClear()){
+      move();
+   }
+}
+
+function num4 (){
+   turnAround();
+   while (noBeepersPresent()){
+   move();
+   turnRight();
+   move();
+   turnLeft();
+   }
+   putBeeper();
+}
+function num5 (){
+   turnRight();
+   while (frontIsClear()) {
+      move();
+   }
+}
+
+function num6 (){
+      pickBeeper();
+      move();
+      turnLeft();
+      move();
+      turnRight();
+   
+}
+
+function num7(){
+      while (leftIsClear()) {
+      pickBeeper();
+      turnLeft();
+      move();
+      turnRight();
+      move();
+      }
+      pickBeeper();
+}
