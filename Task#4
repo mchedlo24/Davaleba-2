@@ -1,0 +1,34 @@
+function main(){
+   option4();
+   option1();
+}
+
+function option1(){
+   putBeeper();
+   while(frontIsClear()) {
+      move();
+      putBeeper();
+   }
+}
+
+function option2(){
+   if (leftIsClear()){
+      turnAround();
+      while (frontIsClear()) {
+         move();
+      }
+   }      
+}
+function option3 (){
+   turnRight();
+   move();
+   turnRight();
+}
+
+function option4(){
+   while (leftIsClear()){
+      option1();
+      option2();
+      option3();
+   }
+}
